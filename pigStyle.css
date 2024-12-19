@@ -1,0 +1,243 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000
+
+.nunito-<uniquifier> {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+body {
+    font-family: nunito,sans-serif;
+    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid; */
+
+}
+
+.header-text{
+    color: white;
+    font-size: 56px;
+    font-weight: 800;
+    text-shadow: 1px 6px 4px #2121215c ;
+    /* border: 1px solid; */
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid; */
+    width: 853px;
+    height: 500px;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 15px;
+    padding: 0px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.37);
+    position: relative;
+
+}
+
+.left-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+background-color: #f6d3d3d9;
+width: 426.5px;
+height: 500px;
+border-radius: 15px 0px 0px 15px;
+transition: all 0.6s ease-in-out;
+}
+
+.switchLeft {
+    background-color: #f6d3d385;
+        width: 426.5px;
+        height: 500px;
+        border-radius: 15px 0px 0px 15px;
+        transition: all 0.6s ease-in-out;
+}
+
+
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f6d3d385;
+    width: 426.5px;
+    height: 500px;
+    border-radius: 0px 15px 15px 0px;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.switchRight {
+
+    background-color: #f6d3d3d9;
+    width: 426.5px;
+    height: 500px;
+    border-radius: 0px 15px 15px 0px;
+    transition: all 0.6s ease-in-out;
+  
+}
+
+
+/* win condition */
+.winContainer {
+    background-color: #2f2f2f;
+    
+}
+
+
+
+.player{
+    font-size: 35px;
+    /* border: 1px solid; */
+    margin-bottom: 20px;
+    
+}
+
+.number{
+    color: #c7365f;
+    font-size: 70px;
+    /* border: 1px solid; */
+    padding: 0px;
+    margin-bottom: 80px;
+}
+
+.current-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7365f;
+    width: 200px;
+    height: 110px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.current-number{
+    font-size: 30px;
+    /* border: 1px solid; */
+    margin: 0px;
+
+}
+
+.current-container p {
+    font-size: 15px;
+    /* border: 1px solid; */
+    margin-bottom: 4px;
+
+}
+
+#newGameButton {
+    position: absolute;
+    right: 355px;
+    top: 50px;
+
+
+}
+
+#rollDice{
+    position: absolute;
+    right:355px ;
+        top: 320px;
+    /* display: none; */
+
+}
+
+#hold{
+    /* display: none; */
+    position: absolute;
+        right: 370px;
+            top: 390px;
+}
+
+
+
+button{
+    /* display: none; */
+    background-color: rgba(255, 255, 255, 0.759);
+    border: none;
+    color: #212121cf;
+    padding: 12px 25px;
+    border-radius: 50px;
+
+}
+
+#dice{
+    width: 100px;
+    position: absolute;
+    right: 375px;
+    top: 140px;
+    
+}
+
+.dice{
+    display: none;
+
+}
+
+.player2{
+font-weight: 300 ;
+color: #434343;
+
+}
+
+.player1 {
+    font-weight: 600;
+    color: #2b2a2a;
+
+}
+
+.btn:active{
+    transform: translatey(3px);
+    box-shadow: 0px 6px 10px #21212117;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+
+.switchFontToLeft {
+    font-weight: 300;
+    color: #434343;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.switchFontToRight {
+    font-weight: 600;
+    color: #2b2a2a;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.winTextPlayer {
+    color: #c7365f;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
